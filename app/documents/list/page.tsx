@@ -69,7 +69,7 @@ export default function DocumentListPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {documents.map((doc) => {
-                    const s3Url = `https://s3-eddi-lsh-bucket.s3.ap-northeast-2.amazonaws.com/${doc.s3_key}`;
+                    const s3Url = `https://what-a-buck-et.s3.ap-southeast-2.amazonaws.com/${doc.s3_key}`;
                     return (
                         <div key={doc.id} className="bg-white shadow rounded-lg p-4 flex flex-col">
                             <p className="font-medium text-gray-800">{doc.file_name}</p>
